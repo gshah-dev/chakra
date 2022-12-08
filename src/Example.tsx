@@ -9,7 +9,7 @@ export type ExampleProps = {
 export function Example(props: ExampleProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Heading as="h1" color="brand.400">{props.text}</Heading>
+      <Heading as="h1" color="brand.500">{props.text}</Heading>
     </ChakraProvider>
   );
 }
