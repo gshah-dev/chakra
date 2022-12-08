@@ -1,4 +1,11 @@
-import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
+/* eslint-disable dot-notation */
+/* eslint-disable implicit-arrow-linebreak */
+import {
+  darken,
+  mode,
+  StyleFunctionProps,
+  transparentize,
+} from '@chakra-ui/theme-tools';
 
 const baseStyle = {
   ':focus:not(:focus-visible)': {
@@ -6,7 +13,7 @@ const baseStyle = {
   },
   fontWeight: 'medium',
   borderRadius: 'lg',
-}
+};
 
 const sizes = {
   lg: {
@@ -18,7 +25,7 @@ const sizes = {
     fontSize: 'lg',
     px: 7,
   },
-}
+};
 
 const variants = {
   primary: (props: StyleFunctionProps) =>
@@ -65,10 +72,16 @@ const variants = {
   ghost: (props: StyleFunctionProps) => ({
     color: 'emphasized',
     _hover: {
-      bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
+      bg: mode(
+        darken('gray.50', 1)(props.theme),
+        darken('gray.700', 4)(props.theme),
+      )(props),
     },
     _active: {
-      bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
+      bg: mode(
+        darken('gray.50', 1)(props.theme),
+        darken('gray.700', 4)(props.theme),
+      )(props),
     },
     _activeLink: {
       bg: mode('gray.100', 'gray.700')(props),
@@ -95,38 +108,45 @@ const variants = {
         _active: {
           color: 'default',
         },
-      }
+      };
     }
     return {
-      color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props),
+      color: mode(
+        `${props.colorScheme}.600`,
+        `${props.colorScheme}.200`,
+      )(props),
       _hover: {
-        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+        color: mode(
+          `${props.colorScheme}.700`,
+          `${props.colorScheme}.300`,
+        )(props),
         textDecoration: 'none',
       },
       _active: {
-        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+        color: mode(
+          `${props.colorScheme}.700`,
+          `${props.colorScheme}.300`,
+        )(props),
       },
-    }
+    };
   },
-  'link-on-accent': () => {
-    return {
-      padding: 0,
-      height: 'auto',
-      lineHeight: 'normal',
-      verticalAlign: 'baseline',
-      color: 'brand.50',
-      _hover: {
-        color: 'white',
-      },
-      _active: {
-        color: 'white',
-      },
-    }
-  },
-}
+  'link-on-accent': () => ({
+    padding: 0,
+    height: 'auto',
+    lineHeight: 'normal',
+    verticalAlign: 'baseline',
+    color: 'brand.50',
+    _hover: {
+      color: 'white',
+    },
+    _active: {
+      color: 'white',
+    },
+  }),
+};
 
 export default {
   baseStyle,
   variants,
   sizes,
-}
+};

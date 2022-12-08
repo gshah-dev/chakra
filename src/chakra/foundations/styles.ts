@@ -1,4 +1,4 @@
-import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools';
 
 export default {
   global: (props: StyleFunctionProps) => ({
@@ -22,4 +22,4 @@ export default {
       minH: '100%',
     },
   }),
-}
+};

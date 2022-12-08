@@ -1,4 +1,4 @@
-import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools';
 
 const baseStyle = (props: StyleFunctionProps) => ({
   label: {
@@ -9,7 +9,7 @@ const baseStyle = (props: StyleFunctionProps) => ({
     bg: mode('white', 'gray.800')(props),
     borderRadius: 'base',
   },
-})
+});
 
 const sizes = {
   md: {
@@ -17,14 +17,14 @@ const sizes = {
       fontSize: 'sm',
     },
   },
-}
+};
 
 const defaultProps = {
   colorScheme: 'brand',
-}
+};
 
 export default {
   baseStyle,
   sizes,
   defaultProps,
-}
+};

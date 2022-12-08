@@ -6,8 +6,8 @@ const variants = {
       bg: 'bg-subtle',
     },
   }),
-}
+};
 
 export default {
   variants,
-}
+};

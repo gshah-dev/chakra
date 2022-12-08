@@ -1,10 +1,15 @@
-import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
+import {
+  darken,
+  mode,
+  StyleFunctionProps,
+  transparentize,
+} from '@chakra-ui/theme-tools';
 
 const baseStyle = {
   textTransform: 'normal',
   fontWeight: 'medium',
   borderRadius: '2xl',
-}
+};
 
 const sizes = {
   lg: {
@@ -24,7 +29,7 @@ const sizes = {
     px: '2',
     py: '0.5',
   },
-}
+};
 
 const variants = {
   subtle: (props: StyleFunctionProps) => ({
@@ -33,16 +38,16 @@ const variants = {
       transparentize(`${props.colorScheme}.200`, 0.16)(props.theme),
     )(props),
   }),
-}
+};
 
 const defaultProps = {
   size: 'md',
   variant: 'subtle',
-}
+};
 
 export default {
   baseStyle,
   defaultProps,
   variants,
   sizes,
-}
+};

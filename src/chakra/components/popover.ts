@@ -1,4 +1,4 @@
-import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools';
 
 const baseStyle = (props: StyleFunctionProps) => ({
   content: {
@@ -8,8 +8,8 @@ const baseStyle = (props: StyleFunctionProps) => ({
     background: 'bg-surface',
     overflow: 'hidden',
   },
-})
+});
 
 export default {
   baseStyle,
-}
+};

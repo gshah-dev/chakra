@@ -1,4 +1,8 @@
-import { mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
+import {
+  mode,
+  StyleFunctionProps,
+  transparentize,
+} from '@chakra-ui/theme-tools';
 
 const variants = {
   outline: (props: StyleFunctionProps) => ({
@@ -9,8 +13,8 @@ const variants = {
       _focus: {
         borderColor: mode('brand.500', 'brand.200')(props),
         boxShadow: mode(
-          `0px 0px 0px 1px ${transparentize(`brand.500`, 1.0)(props.theme)}`,
-          `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
+          `0px 0px 0px 1px ${transparentize('brand.500', 1.0)(props.theme)}`,
+          `0px 0px 0px 1px ${transparentize('brand.200', 1.0)(props.theme)}`,
         )(props),
       },
     },
@@ -34,7 +38,10 @@ const variants = {
       },
       _focus: {
         borderColor: 'brand.200',
-        boxShadow: `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
+        boxShadow: `0px 0px 0px 1px ${transparentize(
+          'brand.200',
+          1.0,
+        )(props.theme)}`,
       },
     },
   }),
@@ -52,7 +59,7 @@ const variants = {
             bg: mode('white', 'gray.800')(props),
           },
         },
-      }
+      };
     }
     return {
       field: {
@@ -70,9 +77,9 @@ const variants = {
           borderColor: 'brand.300',
         },
       },
-    }
+    };
   },
-}
+};
 
 const sizes = {
   lg: {
@@ -81,7 +88,7 @@ const sizes = {
       borderRadius: 'lg',
     },
   },
-}
+};
 
 export default {
   variants,
@@ -89,4 +96,4 @@ export default {
   defaultProps: {
     colorScheme: 'gray',
   },
-}
+};

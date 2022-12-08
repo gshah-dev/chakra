@@ -59,4 +59,4 @@ export default {
     'on-accent-muted': 'brand.50',
     'on-accent-subtle': 'brand.100',
   },
-}
+};
