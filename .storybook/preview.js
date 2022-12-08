@@ -1,4 +1,9 @@
+const theme = require('../src/chakra/theme');
+
 export const parameters = {
+  chakra: {
+    theme,
+  },
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {

@@ -1,5 +1,3 @@
 {
-  "marquee.widgets.npm-stats.packageNames": [
-    "@gshah.dev/theme"
-  ]
+  "marquee.widgets.npm-stats.packageNames": ["@gshah.dev/theme"]
 }
