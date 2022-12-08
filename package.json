@@ -7,7 +7,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/gshah-dev/theme.git"
   },
   "scripts": {
     "dev": "concurrently \"yarn build --watch\" \"yarn storybook\"",
