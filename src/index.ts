@@ -1,2 +1,2 @@
-export * from './Example';
 export * from './chakra';
+export * from './components';

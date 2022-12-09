@@ -1,4 +1,5 @@
 export { default as Badge } from './badge';
+export { default as Bar } from './bar';
 export { default as Button } from './button';
 export { default as Checkbox } from './checkbox';
 export { default as CloseButton } from './close-button';

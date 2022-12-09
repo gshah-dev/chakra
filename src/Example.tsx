@@ -1,17 +1,16 @@
 import React from 'react';
-import { ChakraProvider, Heading } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import { theme } from './chakra';
+import { Bar } from './components';
 
 export type ExampleProps = {
-  text?: String;
+  children?: React.ReactNode;
 };
 
 export function Example(props: ExampleProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Heading as="h1" color="brand.500">
-        {props.text}
-      </Heading>
+      <Bar>{props.children}</Bar>
     </ChakraProvider>
   );
 }

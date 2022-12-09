@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Example } from '..';
+import { Example } from '../Example';
 
 export default {
   title: 'Example',
@@ -16,11 +16,11 @@ const Template: ComponentStory<typeof Example> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
-  text: 'Hello World',
+  children: <>Test</>,
 };
 
 export const Secondary = Template.bind({});
 
 Secondary.args = {
-  text: 'Hello Nurse',
+  children: <>Test2</>,
 };

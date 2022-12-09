@@ -52,6 +52,10 @@ export default {
       default: 'red.600',
       _dark: 'red.200',
     },
+    warning: {
+      default: '#F0DD33',
+      _dark: '#fff6a8',
+    },
     'bg-accent': 'brand.600',
     'bg-accent-subtle': 'brand.500',
     'bg-accent-muted': 'brand.400',

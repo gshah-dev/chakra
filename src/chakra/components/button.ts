@@ -97,6 +97,23 @@ const variants = {
       bg: 'bg-accent-subtle',
     },
   }),
+  pill: (props: StyleFunctionProps) => ({
+    color: 'emphasized',
+    bg: mode('white', 'gray.800')(props),
+    _hover: {
+      bg: mode(
+        darken('gray.50', 1)(props.theme),
+        transparentize('gray.700', 0.4)(props.theme),
+      )(props),
+    },
+    _checked: {
+      bg: mode('gray.100', 'gray.700')(props),
+    },
+    _active: {
+      bg: mode('gray.100', 'gray.700')(props),
+    },
+    rounded: 'full',
+  }),
   link: (props: StyleFunctionProps) => {
     if (props.colorScheme === 'gray') {
       return {
